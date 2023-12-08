@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-d3ZlKkC2dhu8VRd9w6fGNpx2rUDTD6pHRd4e8UqC25DJNlWx0TFAUq3pYz6HxMOI" crossorigin="anonymous">
+    <title>Developer Portfolio</title>
+</head>
+<body>
+    <!-- Update the header section in your HTML -->
+    <header class="rounded-header">
+        <div class="container">
+            <nav class="rounded-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to My Developer Portfolio</h2>
+            <p>Explore my skills, projects, and achievements.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project" onclick="showProjectDetails('Project 1', 'Description of Project 1.')">
+                <h3>Project 1</h3>
+            </div>
+            <div class="project" onclick="showProjectDetails('Project 2', 'Description of Project 2.')">
+                <h3>Project 2</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me.</p>
+            <button onclick="showContactForm()">Send Message</button>
+        </div>
+    </section>
+
+    <div id="projectDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="projectTitle"></h2>
+            <p id="projectDescription"></p>
+        </div>
+    </div>
+
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Form</h2>
+            <!-- Add your contact form here -->
+        </div>
+    </div>
+
+    <footer class="social-bar">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img class="logo" src="logo/968ea62882943e88bbd318ae5fa67429.png"><i class="fab fa- linkedin"></i></a>
+                <a href="https://github.com/your-github-profile" target="_blank"><img class="logo" src="logo/GitHub-Mark-ea2971cee799.png"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/your-twitter-profile" target="_blank"><img class="logo" src="logo/Avatar-Symbol-Canopy.webp"><i class="fab fa-linktree"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
